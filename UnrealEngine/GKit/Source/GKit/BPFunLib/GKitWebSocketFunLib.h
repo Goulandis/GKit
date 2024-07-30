@@ -11,8 +11,10 @@ class GKIT_API UGKitWebSocketFunLib : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 public:
+	// WebSockt连接
 	UFUNCTION(BlueprintCallable,Category="GKit|WebSocket")
 	static void Connect(const FString& URL,const FString& Protocol = "ws");
+	// WebSocket关闭
 	UFUNCTION(BlueprintCallable,Category="GNet|WebSocket")
 	static void Close();
 	

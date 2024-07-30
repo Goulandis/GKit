@@ -26,7 +26,8 @@ public class GKit : ModuleRules
 			new string[]
 			{
 				"Core",
-				"WebSockets"
+				"WebSockets",
+				"UnrealEd"
 			}
 			);
 			
