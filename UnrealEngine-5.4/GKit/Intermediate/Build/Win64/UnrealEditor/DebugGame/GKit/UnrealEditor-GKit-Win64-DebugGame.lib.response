@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-GKit-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Live-UE51\Intermediate\Build\Win64\LiveEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.NonOptimized.ShadowErrors.InclOrderUnreal5_0.h.obj"
+"C:\Live-UE51\Plugins\GKit\Intermediate\Build\Win64\UnrealEditor\DebugGame\GKit\Module.GKit.cpp.obj"
+"C:\Live-UE51\Plugins\GKit\Intermediate\Build\Win64\UnrealEditor\DebugGame\GKit\Default.rc2.res"
+/OUT:"C:\Live-UE51\Plugins\GKit\Intermediate\Build\Win64\UnrealEditor\DebugGame\GKit\UnrealEditor-GKit-Win64-DebugGame.lib"
