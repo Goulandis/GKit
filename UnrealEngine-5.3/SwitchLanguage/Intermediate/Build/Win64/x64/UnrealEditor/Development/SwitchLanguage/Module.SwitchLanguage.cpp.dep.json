@@ -1,0 +1,41 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\projects\\uevideo\\uevideo_0\\plugins\\gkit\\unrealengine-5.3\\switchlanguage\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\switchlanguage\\module.switchlanguage.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\projects\\uevideo\\uevideo_0\\intermediate\\build\\win64\\x64\\uevideo_0editor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "Includes": [
+            "e:\\projects\\uevideo\\uevideo_0\\plugins\\gkit\\unrealengine-5.3\\switchlanguage\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\switchlanguage\\definitions.switchlanguage.h",
+            "e:\\projects\\uevideo\\uevideo_0\\plugins\\gkit\\unrealengine-5.3\\switchlanguage\\source\\switchlanguage\\private\\switchlanguage.cpp",
+            "e:\\projects\\uevideo\\uevideo_0\\plugins\\gkit\\unrealengine-5.3\\switchlanguage\\source\\switchlanguage\\public\\switchlanguage.h",
+            "e:\\projects\\uevideo\\uevideo_0\\plugins\\gkit\\unrealengine-5.3\\switchlanguage\\source\\switchlanguage\\public\\switchlanguagestyle.h",
+            "e:\\projects\\uevideo\\uevideo_0\\plugins\\gkit\\unrealengine-5.3\\switchlanguage\\source\\switchlanguage\\public\\switchlanguagecommands.h",
+            "c:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetinternationalizationlibrary.h",
+            "c:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetinternationalizationlibrary.generated.h",
+            "c:\\ue_5.3\\engine\\source\\editor\\leveleditor\\public\\leveleditor.h",
+            "c:\\ue_5.3\\engine\\source\\editor\\leveleditor\\public\\ileveleditor.h",
+            "c:\\ue_5.3\\engine\\source\\runtime\\engine\\public\\elements\\framework\\engineelementslibrary.h",
+            "c:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\engineelementslibrary.generated.h",
+            "c:\\ue_5.3\\engine\\source\\editor\\leveleditor\\public\\viewporttypedefinition.h",
+            "c:\\ue_5.3\\engine\\source\\editor\\leveleditor\\public\\leveleditoroutlinersettings.h",
+            "c:\\ue_5.3\\engine\\source\\developer\\toolwidgets\\public\\filters\\genericfilter.h",
+            "c:\\ue_5.3\\engine\\source\\developer\\toolwidgets\\public\\filters\\filterbase.h",
+            "c:\\ue_5.3\\engine\\source\\editor\\unrealed\\public\\kismet2\\blueprinteditorutils.h",
+            "c:\\ue_5.3\\engine\\source\\editor\\classviewer\\public\\classviewermodule.h",
+            "e:\\projects\\uevideo\\uevideo_0\\plugins\\gkit\\unrealengine-5.3\\switchlanguage\\source\\switchlanguage\\private\\switchlanguagecommands.cpp",
+            "e:\\projects\\uevideo\\uevideo_0\\plugins\\gkit\\unrealengine-5.3\\switchlanguage\\source\\switchlanguage\\private\\switchlanguagestyle.cpp",
+            "c:\\ue_5.3\\engine\\source\\runtime\\slatecore\\public\\styling\\slatestyleregistry.h",
+            "c:\\ue_5.3\\engine\\source\\runtime\\engine\\public\\slate\\slategameresources.h",
+            "c:\\ue_5.3\\engine\\source\\runtime\\projects\\public\\interfaces\\ipluginmanager.h",
+            "c:\\ue_5.3\\engine\\source\\runtime\\projects\\public\\plugindescriptor.h",
+            "c:\\ue_5.3\\engine\\source\\runtime\\projects\\public\\custombuildsteps.h",
+            "c:\\ue_5.3\\engine\\source\\runtime\\projects\\public\\localizationdescriptor.h",
+            "c:\\ue_5.3\\engine\\source\\runtime\\projects\\public\\moduledescriptor.h",
+            "c:\\ue_5.3\\engine\\source\\runtime\\projects\\public\\pluginreferencedescriptor.h",
+            "c:\\ue_5.3\\engine\\source\\runtime\\projects\\public\\versescope.h",
+            "c:\\ue_5.3\\engine\\source\\runtime\\slatecore\\public\\styling\\slatestylemacros.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

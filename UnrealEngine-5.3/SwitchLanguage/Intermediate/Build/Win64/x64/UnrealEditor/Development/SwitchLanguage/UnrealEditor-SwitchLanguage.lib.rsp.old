@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-SwitchLanguage.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\Projects\LiveLinkMVN\Intermediate\Build\Win64\x64\LiveLinkMVNEditor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.InclOrderUnreal5_0.h.obj"
+"E:\Projects\LiveLinkMVN\Plugins\GKit\UnrealEngine-5.3\SwitchLanguage\Intermediate\Build\Win64\x64\UnrealEditor\Development\SwitchLanguage\Module.SwitchLanguage.cpp.obj"
+"E:\Projects\LiveLinkMVN\Plugins\GKit\UnrealEngine-5.3\SwitchLanguage\Intermediate\Build\Win64\x64\UnrealEditor\Development\SwitchLanguage\Default.rc2.res"
+/OUT:"E:\Projects\LiveLinkMVN\Plugins\GKit\UnrealEngine-5.3\SwitchLanguage\Intermediate\Build\Win64\x64\UnrealEditor\Development\SwitchLanguage\UnrealEditor-SwitchLanguage.lib"

@@ -112,6 +112,54 @@ UEnum* Z_Construct_UEnum_GKit_EGkitImgFormat()
 }
 // End Enum EGkitImgFormat
 
+// Begin Class UGKitEditorFunLib Function PasteContentFromClipboard
+struct Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics
+{
+	struct GKitEditorFunLib_eventPasteContentFromClipboard_Parms
+	{
+		FString ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "GKit|Editor" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// \xe4\xbb\x8e\xe5\x89\xaa\xe8\xb4\xb4\xe6\x9d\xbf\xe6\x8b\xb7\xe8\xb4\x9d\xe5\x86\x85\xe5\xae\xb9\n" },
+#endif
+		{ "ModuleRelativePath", "BPFunLib/GKitEditorFunLib.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "\xe4\xbb\x8e\xe5\x89\xaa\xe8\xb4\xb4\xe6\x9d\xbf\xe6\x8b\xb7\xe8\xb4\x9d\xe5\x86\x85\xe5\xae\xb9" },
+#endif
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(GKitEditorFunLib_eventPasteContentFromClipboard_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitEditorFunLib, nullptr, "PasteContentFromClipboard", nullptr, nullptr, Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::GKitEditorFunLib_eventPasteContentFromClipboard_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::GKitEditorFunLib_eventPasteContentFromClipboard_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UGKitEditorFunLib::execPasteContentFromClipboard)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(FString*)Z_Param__Result=UGKitEditorFunLib::PasteContentFromClipboard();
+	P_NATIVE_END;
+}
+// End Class UGKitEditorFunLib Function PasteContentFromClipboard
+
 // Begin Class UGKitEditorFunLib Function SaveAssetThumbnail
 struct Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics
 {
@@ -305,7 +353,7 @@ struct Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Static
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "GKit|Editor" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "// // \xe9\x80\x9a\xe8\xbf\x87\xe5\xaf\xb9\xe8\xb1\xa1\xe4\xbf\x9d\xe5\xad\x98\xe8\xb5\x84\xe4\xba\xa7\xe7\xbc\xa9\xe7\x95\xa5\xe5\x9b\xbe\xef\xbc\x8c\xe4\xbd\xbf\xe7\x94\xa8\xe4\xba\x86UnrealEd\xe6\xa8\xa1\xe5\x9d\x97\xef\xbc\x8c\xe4\xb8\x8d\xe5\x8f\xaf\xe6\x89\x93\xe5\x8c\x85\n" },
+		{ "Comment", "// \xe9\x80\x9a\xe8\xbf\x87\xe5\xaf\xb9\xe8\xb1\xa1\xe4\xbf\x9d\xe5\xad\x98\xe8\xb5\x84\xe4\xba\xa7\xe7\xbc\xa9\xe7\x95\xa5\xe5\x9b\xbe\xef\xbc\x8c\xe4\xbd\xbf\xe7\x94\xa8\xe4\xba\x86UnrealEd\xe6\xa8\xa1\xe5\x9d\x97\xef\xbc\x8c\xe4\xb8\x8d\xe5\x8f\xaf\xe6\x89\x93\xe5\x8c\x85\n" },
 #endif
 		{ "CPP_Default_ImageType", "PNG" },
 		{ "CPP_Default_Quality", "100" },
@@ -381,6 +429,7 @@ void UGKitEditorFunLib::StaticRegisterNativesUGKitEditorFunLib()
 {
 	UClass* Class = UGKitEditorFunLib::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
+		{ "PasteContentFromClipboard", &UGKitEditorFunLib::execPasteContentFromClipboard },
 		{ "SaveAssetThumbnail", &UGKitEditorFunLib::execSaveAssetThumbnail },
 		{ "SaveAssetThumbnailByClass", &UGKitEditorFunLib::execSaveAssetThumbnailByClass },
 		{ "SaveAssetThumbnailByObject", &UGKitEditorFunLib::execSaveAssetThumbnailByObject },
@@ -402,9 +451,10 @@ struct Z_Construct_UClass_UGKitEditorFunLib_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard, "PasteContentFromClipboard" }, // 1955043219
 		{ &Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail, "SaveAssetThumbnail" }, // 2791942765
 		{ &Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass, "SaveAssetThumbnailByClass" }, // 391916059
-		{ &Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject, "SaveAssetThumbnailByObject" }, // 2110184316
+		{ &Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject, "SaveAssetThumbnailByObject" }, // 3244220238
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -450,18 +500,18 @@ UGKitEditorFunLib::~UGKitEditorFunLib() {}
 // End Class UGKitEditorFunLib
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_MyProject_Plugins_GKit_UnrealEngine_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics
+struct Z_CompiledInDeferFile_FID_LearnPCG54_Plugins_GKit_UnrealEngine_5_4_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EGkitImgFormat_StaticEnum, TEXT("EGkitImgFormat"), &Z_Registration_Info_UEnum_EGkitImgFormat, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1920508157U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UGKitEditorFunLib, UGKitEditorFunLib::StaticClass, TEXT("UGKitEditorFunLib"), &Z_Registration_Info_UClass_UGKitEditorFunLib, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGKitEditorFunLib), 2711685883U) },
+		{ Z_Construct_UClass_UGKitEditorFunLib, UGKitEditorFunLib::StaticClass, TEXT("UGKitEditorFunLib"), &Z_Registration_Info_UClass_UGKitEditorFunLib, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGKitEditorFunLib), 839027638U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MyProject_Plugins_GKit_UnrealEngine_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_3739671(TEXT("/Script/GKit"),
-	Z_CompiledInDeferFile_FID_MyProject_Plugins_GKit_UnrealEngine_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MyProject_Plugins_GKit_UnrealEngine_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LearnPCG54_Plugins_GKit_UnrealEngine_5_4_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_1997208044(TEXT("/Script/GKit"),
+	Z_CompiledInDeferFile_FID_LearnPCG54_Plugins_GKit_UnrealEngine_5_4_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LearnPCG54_Plugins_GKit_UnrealEngine_5_4_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_MyProject_Plugins_GKit_UnrealEngine_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MyProject_Plugins_GKit_UnrealEngine_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_LearnPCG54_Plugins_GKit_UnrealEngine_5_4_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LearnPCG54_Plugins_GKit_UnrealEngine_5_4_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

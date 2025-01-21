@@ -10,6 +10,7 @@ UCLASS()
 class GKIT_API UGKitFileFunLib : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
+public:
 	// 读取文件内容到字符串
 	UFUNCTION(BlueprintCallable,Category="GKit|FileOpe")
 	static FString ReadFileToString(const FString& Path,bool& Rel);

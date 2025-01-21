@@ -23,7 +23,7 @@ void EmptyLinkFunctionForGeneratedCodeGKitEditorFunLib() {}
 	{
 		if (!Z_Registration_Info_UEnum_EGkitImgFormat.OuterSingleton)
 		{
-			Z_Registration_Info_UEnum_EGkitImgFormat.OuterSingleton = GetStaticEnum(Z_Construct_UEnum_GKit_EGkitImgFormat, Z_Construct_UPackage__Script_GKit(), TEXT("EGkitImgFormat"));
+			Z_Registration_Info_UEnum_EGkitImgFormat.OuterSingleton = GetStaticEnum(Z_Construct_UEnum_GKit_EGkitImgFormat, (UObject*)Z_Construct_UPackage__Script_GKit(), TEXT("EGkitImgFormat"));
 		}
 		return Z_Registration_Info_UEnum_EGkitImgFormat.OuterSingleton;
 	}
@@ -97,11 +97,11 @@ void EmptyLinkFunctionForGeneratedCodeGKitEditorFunLib() {}
 		"EGkitImgFormat",
 		"EGkitImgFormat",
 		Z_Construct_UEnum_GKit_EGkitImgFormat_Statics::Enumerators,
-		UE_ARRAY_COUNT(Z_Construct_UEnum_GKit_EGkitImgFormat_Statics::Enumerators),
 		RF_Public|RF_Transient|RF_MarkAsNative,
+		UE_ARRAY_COUNT(Z_Construct_UEnum_GKit_EGkitImgFormat_Statics::Enumerators),
 		EEnumFlags::None,
 		(uint8)UEnum::ECppForm::EnumClass,
-		METADATA_PARAMS(Z_Construct_UEnum_GKit_EGkitImgFormat_Statics::Enum_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UEnum_GKit_EGkitImgFormat_Statics::Enum_MetaDataParams))
+		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UEnum_GKit_EGkitImgFormat_Statics::Enum_MetaDataParams), Z_Construct_UEnum_GKit_EGkitImgFormat_Statics::Enum_MetaDataParams)
 	};
 	UEnum* Z_Construct_UEnum_GKit_EGkitImgFormat()
 	{
@@ -110,6 +110,13 @@ void EmptyLinkFunctionForGeneratedCodeGKitEditorFunLib() {}
 			UECodeGen_Private::ConstructUEnum(Z_Registration_Info_UEnum_EGkitImgFormat.InnerSingleton, Z_Construct_UEnum_GKit_EGkitImgFormat_Statics::EnumParams);
 		}
 		return Z_Registration_Info_UEnum_EGkitImgFormat.InnerSingleton;
+	}
+	DEFINE_FUNCTION(UGKitEditorFunLib::execPasteContentFromClipboard)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=UGKitEditorFunLib::PasteContentFromClipboard();
+		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(UGKitEditorFunLib::execSaveAssetThumbnailByObject)
 	{
@@ -151,11 +158,53 @@ void EmptyLinkFunctionForGeneratedCodeGKitEditorFunLib() {}
 	{
 		UClass* Class = UGKitEditorFunLib::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "PasteContentFromClipboard", &UGKitEditorFunLib::execPasteContentFromClipboard },
 			{ "SaveAssetThumbnail", &UGKitEditorFunLib::execSaveAssetThumbnail },
 			{ "SaveAssetThumbnailByClass", &UGKitEditorFunLib::execSaveAssetThumbnailByClass },
 			{ "SaveAssetThumbnailByObject", &UGKitEditorFunLib::execSaveAssetThumbnailByObject },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics
+	{
+		struct GKitEditorFunLib_eventPasteContentFromClipboard_Parms
+		{
+			FString ReturnValue;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(GKitEditorFunLib_eventPasteContentFromClipboard_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::Function_MetaDataParams[] = {
+		{ "Category", "GKit|Editor" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// \xe4\xbb\x8e\xe5\x89\xaa\xe8\xb4\xb4\xe6\x9d\xbf\xe6\x8b\xb7\xe8\xb4\x9d\xe5\x86\x85\xe5\xae\xb9\n" },
+#endif
+		{ "ModuleRelativePath", "BPFunLib/GKitEditorFunLib.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "\xe4\xbb\x8e\xe5\x89\xaa\xe8\xb4\xb4\xe6\x9d\xbf\xe6\x8b\xb7\xe8\xb4\x9d\xe5\x86\x85\xe5\xae\xb9" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitEditorFunLib, nullptr, "PasteContentFromClipboard", nullptr, nullptr, Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::GKitEditorFunLib_eventPasteContentFromClipboard_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::GKitEditorFunLib_eventPasteContentFromClipboard_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics
 	{
@@ -202,27 +251,27 @@ void EmptyLinkFunctionForGeneratedCodeGKitEditorFunLib() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_AssetData = { "AssetData", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnail_Parms, AssetData), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_AssetData_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_AssetData_MetaData)) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_AssetData = { "AssetData", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnail_Parms, AssetData), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_AssetData_MetaData), Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_AssetData_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_SaveDir_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_SaveDir = { "SaveDir", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnail_Parms, SaveDir), METADATA_PARAMS(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_SaveDir_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_SaveDir_MetaData)) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_SaveDir = { "SaveDir", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnail_Parms, SaveDir), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_SaveDir_MetaData), Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_SaveDir_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_ImageName_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_ImageName = { "ImageName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnail_Parms, ImageName), METADATA_PARAMS(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_ImageName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_ImageName_MetaData)) };
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_ImageType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_ImageName = { "ImageName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnail_Parms, ImageName), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_ImageName_MetaData), Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_ImageName_MetaData) };
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_ImageType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_ImageType_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_ImageType = { "ImageType", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnail_Parms, ImageType), Z_Construct_UEnum_GKit_EGkitImgFormat, METADATA_PARAMS(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_ImageType_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_ImageType_MetaData)) }; // 558503348
-	const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_Quality = { "Quality", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnail_Parms, Quality), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_ImageType = { "ImageType", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnail_Parms, ImageType), Z_Construct_UEnum_GKit_EGkitImgFormat, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_ImageType_MetaData), Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_ImageType_MetaData) }; // 2372225820
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_Quality = { "Quality", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnail_Parms, Quality), METADATA_PARAMS(0, nullptr) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_AssetData,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::NewProp_SaveDir,
@@ -234,14 +283,20 @@ void EmptyLinkFunctionForGeneratedCodeGKitEditorFunLib() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GKit|Editor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// \xe4\xbf\x9d\xe5\xad\x98\xe8\xb5\x84\xe4\xba\xa7\xe7\xbc\xa9\xe7\x95\xa5\xe5\x9b\xbe\xef\xbc\x8c\xe4\xbd\xbf\xe7\x94\xa8\xe4\xba\x86UnrealEd\xe6\xa8\xa1\xe5\x9d\x97\xef\xbc\x8c\xe4\xb8\x8d\xe5\x8f\xaf\xe6\x89\x93\xe5\x8c\x85\n" },
+#endif
 		{ "CPP_Default_ImageType", "PNG" },
 		{ "CPP_Default_Quality", "100" },
 		{ "ModuleRelativePath", "BPFunLib/GKitEditorFunLib.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "\xe4\xbf\x9d\xe5\xad\x98\xe8\xb5\x84\xe4\xba\xa7\xe7\xbc\xa9\xe7\x95\xa5\xe5\x9b\xbe\xef\xbc\x8c\xe4\xbd\xbf\xe7\x94\xa8\xe4\xba\x86UnrealEd\xe6\xa8\xa1\xe5\x9d\x97\xef\xbc\x8c\xe4\xb8\x8d\xe5\x8f\xaf\xe6\x89\x93\xe5\x8c\x85" },
+#endif
 	};
 #endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitEditorFunLib, nullptr, "SaveAssetThumbnail", nullptr, nullptr, sizeof(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::GKitEditorFunLib_eventSaveAssetThumbnail_Parms), Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C42401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::Function_MetaDataParams)) };
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitEditorFunLib, nullptr, "SaveAssetThumbnail", nullptr, nullptr, Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::GKitEditorFunLib_eventSaveAssetThumbnail_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C42401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail_Statics::GKitEditorFunLib_eventSaveAssetThumbnail_Parms) < MAX_uint16);
 	UFunction* Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -290,27 +345,27 @@ void EmptyLinkFunctionForGeneratedCodeGKitEditorFunLib() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_InClass = { "InClass", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByClass_Parms, InClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_InClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_InClass_MetaData)) };
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_InClass = { "InClass", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByClass_Parms, InClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_InClass_MetaData), Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_InClass_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_SaveDir_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_SaveDir = { "SaveDir", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByClass_Parms, SaveDir), METADATA_PARAMS(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_SaveDir_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_SaveDir_MetaData)) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_SaveDir = { "SaveDir", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByClass_Parms, SaveDir), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_SaveDir_MetaData), Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_SaveDir_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_ImageName_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_ImageName = { "ImageName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByClass_Parms, ImageName), METADATA_PARAMS(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_ImageName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_ImageName_MetaData)) };
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_ImageType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_ImageName = { "ImageName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByClass_Parms, ImageName), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_ImageName_MetaData), Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_ImageName_MetaData) };
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_ImageType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_ImageType_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_ImageType = { "ImageType", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByClass_Parms, ImageType), Z_Construct_UEnum_GKit_EGkitImgFormat, METADATA_PARAMS(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_ImageType_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_ImageType_MetaData)) }; // 558503348
-	const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_Quality = { "Quality", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByClass_Parms, Quality), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_ImageType = { "ImageType", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByClass_Parms, ImageType), Z_Construct_UEnum_GKit_EGkitImgFormat, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_ImageType_MetaData), Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_ImageType_MetaData) }; // 2372225820
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_Quality = { "Quality", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByClass_Parms, Quality), METADATA_PARAMS(0, nullptr) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_InClass,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::NewProp_SaveDir,
@@ -322,14 +377,20 @@ void EmptyLinkFunctionForGeneratedCodeGKitEditorFunLib() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GKit|Editor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// \xe9\x80\x9a\xe8\xbf\x87\xe7\xb1\xbb\xe4\xbf\x9d\xe5\xad\x98\xe8\xb5\x84\xe4\xba\xa7\xe7\xbc\xa9\xe7\x95\xa5\xe5\x9b\xbe\xef\xbc\x8c\xe4\xbd\xbf\xe7\x94\xa8\xe4\xba\x86UnrealEd\xe6\xa8\xa1\xe5\x9d\x97\xef\xbc\x8c\xe4\xb8\x8d\xe5\x8f\xaf\xe6\x89\x93\xe5\x8c\x85\n" },
+#endif
 		{ "CPP_Default_ImageType", "PNG" },
 		{ "CPP_Default_Quality", "100" },
 		{ "ModuleRelativePath", "BPFunLib/GKitEditorFunLib.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "\xe9\x80\x9a\xe8\xbf\x87\xe7\xb1\xbb\xe4\xbf\x9d\xe5\xad\x98\xe8\xb5\x84\xe4\xba\xa7\xe7\xbc\xa9\xe7\x95\xa5\xe5\x9b\xbe\xef\xbc\x8c\xe4\xbd\xbf\xe7\x94\xa8\xe4\xba\x86UnrealEd\xe6\xa8\xa1\xe5\x9d\x97\xef\xbc\x8c\xe4\xb8\x8d\xe5\x8f\xaf\xe6\x89\x93\xe5\x8c\x85" },
+#endif
 	};
 #endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitEditorFunLib, nullptr, "SaveAssetThumbnailByClass", nullptr, nullptr, sizeof(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::GKitEditorFunLib_eventSaveAssetThumbnailByClass_Parms), Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::Function_MetaDataParams)) };
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitEditorFunLib, nullptr, "SaveAssetThumbnailByClass", nullptr, nullptr, Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::GKitEditorFunLib_eventSaveAssetThumbnailByClass_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass_Statics::GKitEditorFunLib_eventSaveAssetThumbnailByClass_Parms) < MAX_uint16);
 	UFunction* Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -378,27 +439,27 @@ void EmptyLinkFunctionForGeneratedCodeGKitEditorFunLib() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_InObject = { "InObject", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByObject_Parms, InObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_InObject_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_InObject_MetaData)) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_InObject = { "InObject", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByObject_Parms, InObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_InObject_MetaData), Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_InObject_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_SaveDir_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_SaveDir = { "SaveDir", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByObject_Parms, SaveDir), METADATA_PARAMS(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_SaveDir_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_SaveDir_MetaData)) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_SaveDir = { "SaveDir", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByObject_Parms, SaveDir), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_SaveDir_MetaData), Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_SaveDir_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_ImageName_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_ImageName = { "ImageName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByObject_Parms, ImageName), METADATA_PARAMS(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_ImageName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_ImageName_MetaData)) };
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_ImageType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_ImageName = { "ImageName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByObject_Parms, ImageName), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_ImageName_MetaData), Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_ImageName_MetaData) };
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_ImageType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_ImageType_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_ImageType = { "ImageType", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByObject_Parms, ImageType), Z_Construct_UEnum_GKit_EGkitImgFormat, METADATA_PARAMS(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_ImageType_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_ImageType_MetaData)) }; // 558503348
-	const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_Quality = { "Quality", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByObject_Parms, Quality), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_ImageType = { "ImageType", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByObject_Parms, ImageType), Z_Construct_UEnum_GKit_EGkitImgFormat, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_ImageType_MetaData), Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_ImageType_MetaData) }; // 2372225820
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_Quality = { "Quality", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(GKitEditorFunLib_eventSaveAssetThumbnailByObject_Parms, Quality), METADATA_PARAMS(0, nullptr) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_InObject,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::NewProp_SaveDir,
@@ -410,14 +471,20 @@ void EmptyLinkFunctionForGeneratedCodeGKitEditorFunLib() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GKit|Editor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// // \xe9\x80\x9a\xe8\xbf\x87\xe5\xaf\xb9\xe8\xb1\xa1\xe4\xbf\x9d\xe5\xad\x98\xe8\xb5\x84\xe4\xba\xa7\xe7\xbc\xa9\xe7\x95\xa5\xe5\x9b\xbe\xef\xbc\x8c\xe4\xbd\xbf\xe7\x94\xa8\xe4\xba\x86UnrealEd\xe6\xa8\xa1\xe5\x9d\x97\xef\xbc\x8c\xe4\xb8\x8d\xe5\x8f\xaf\xe6\x89\x93\xe5\x8c\x85\n" },
+#endif
 		{ "CPP_Default_ImageType", "PNG" },
 		{ "CPP_Default_Quality", "100" },
 		{ "ModuleRelativePath", "BPFunLib/GKitEditorFunLib.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "\xe9\x80\x9a\xe8\xbf\x87\xe5\xaf\xb9\xe8\xb1\xa1\xe4\xbf\x9d\xe5\xad\x98\xe8\xb5\x84\xe4\xba\xa7\xe7\xbc\xa9\xe7\x95\xa5\xe5\x9b\xbe\xef\xbc\x8c\xe4\xbd\xbf\xe7\x94\xa8\xe4\xba\x86UnrealEd\xe6\xa8\xa1\xe5\x9d\x97\xef\xbc\x8c\xe4\xb8\x8d\xe5\x8f\xaf\xe6\x89\x93\xe5\x8c\x85" },
+#endif
 	};
 #endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitEditorFunLib, nullptr, "SaveAssetThumbnailByObject", nullptr, nullptr, sizeof(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::GKitEditorFunLib_eventSaveAssetThumbnailByObject_Parms), Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::Function_MetaDataParams)) };
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitEditorFunLib, nullptr, "SaveAssetThumbnailByObject", nullptr, nullptr, Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::GKitEditorFunLib_eventSaveAssetThumbnailByObject_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject_Statics::GKitEditorFunLib_eventSaveAssetThumbnailByObject_Parms) < MAX_uint16);
 	UFunction* Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -446,11 +513,14 @@ void EmptyLinkFunctionForGeneratedCodeGKitEditorFunLib() {}
 		(UObject* (*)())Z_Construct_UClass_UBlueprintFunctionLibrary,
 		(UObject* (*)())Z_Construct_UPackage__Script_GKit,
 	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UGKitEditorFunLib_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_UGKitEditorFunLib_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail, "SaveAssetThumbnail" }, // 605605976
-		{ &Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass, "SaveAssetThumbnailByClass" }, // 2593987373
-		{ &Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject, "SaveAssetThumbnailByObject" }, // 1358848920
+		{ &Z_Construct_UFunction_UGKitEditorFunLib_PasteContentFromClipboard, "PasteContentFromClipboard" }, // 3100326670
+		{ &Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnail, "SaveAssetThumbnail" }, // 1986752269
+		{ &Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByClass, "SaveAssetThumbnailByClass" }, // 1398027312
+		{ &Z_Construct_UFunction_UGKitEditorFunLib_SaveAssetThumbnailByObject, "SaveAssetThumbnailByObject" }, // 2903682847
 	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UGKitEditorFunLib_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGKitEditorFunLib_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "BPFunLib/GKitEditorFunLib.h" },
@@ -473,7 +543,7 @@ void EmptyLinkFunctionForGeneratedCodeGKitEditorFunLib() {}
 		0,
 		0,
 		0x001000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UGKitEditorFunLib_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UGKitEditorFunLib_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGKitEditorFunLib_Statics::Class_MetaDataParams), Z_Construct_UClass_UGKitEditorFunLib_Statics::Class_MetaDataParams)
 	};
 	UClass* Z_Construct_UClass_UGKitEditorFunLib()
 	{
@@ -487,21 +557,22 @@ void EmptyLinkFunctionForGeneratedCodeGKitEditorFunLib() {}
 	{
 		return UGKitEditorFunLib::StaticClass();
 	}
+	UGKitEditorFunLib::UGKitEditorFunLib(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UGKitEditorFunLib);
 	UGKitEditorFunLib::~UGKitEditorFunLib() {}
-	struct Z_CompiledInDeferFile_FID_Live_UE51_Plugins_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics
+	struct Z_CompiledInDeferFile_FID_ueVideo_0_Plugins_GKit_UnrealEngine_5_3_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics
 	{
 		static const FEnumRegisterCompiledInInfo EnumInfo[];
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Live_UE51_Plugins_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::EnumInfo[] = {
-		{ EGkitImgFormat_StaticEnum, TEXT("EGkitImgFormat"), &Z_Registration_Info_UEnum_EGkitImgFormat, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 558503348U) },
+	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ueVideo_0_Plugins_GKit_UnrealEngine_5_3_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::EnumInfo[] = {
+		{ EGkitImgFormat_StaticEnum, TEXT("EGkitImgFormat"), &Z_Registration_Info_UEnum_EGkitImgFormat, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2372225820U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Live_UE51_Plugins_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UGKitEditorFunLib, UGKitEditorFunLib::StaticClass, TEXT("UGKitEditorFunLib"), &Z_Registration_Info_UClass_UGKitEditorFunLib, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGKitEditorFunLib), 839841614U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ueVideo_0_Plugins_GKit_UnrealEngine_5_3_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_UGKitEditorFunLib, UGKitEditorFunLib::StaticClass, TEXT("UGKitEditorFunLib"), &Z_Registration_Info_UClass_UGKitEditorFunLib, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGKitEditorFunLib), 3934458385U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Live_UE51_Plugins_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_1813838314(TEXT("/Script/GKit"),
-		Z_CompiledInDeferFile_FID_Live_UE51_Plugins_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Live_UE51_Plugins_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ueVideo_0_Plugins_GKit_UnrealEngine_5_3_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_3800472231(TEXT("/Script/GKit"),
+		Z_CompiledInDeferFile_FID_ueVideo_0_Plugins_GKit_UnrealEngine_5_3_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ueVideo_0_Plugins_GKit_UnrealEngine_5_3_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::ClassInfo),
 		nullptr, 0,
-		Z_CompiledInDeferFile_FID_Live_UE51_Plugins_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Live_UE51_Plugins_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::EnumInfo));
+		Z_CompiledInDeferFile_FID_ueVideo_0_Plugins_GKit_UnrealEngine_5_3_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ueVideo_0_Plugins_GKit_UnrealEngine_5_3_GKit_Source_GKit_BPFunLib_GKitEditorFunLib_h_Statics::EnumInfo));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

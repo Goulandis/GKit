@@ -27,8 +27,9 @@ public class GKit : ModuleRules
 			{
 				"Core",
 				"WebSockets",
-				"UnrealEd"
-			}
+				"UnrealEd",
+                "ApplicationCore"
+            }
 			);
 			
 		

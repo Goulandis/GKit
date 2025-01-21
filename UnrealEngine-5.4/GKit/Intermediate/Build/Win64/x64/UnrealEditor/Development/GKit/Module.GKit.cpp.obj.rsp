@@ -1,11 +1,11 @@
-"E:\Goulandis\UE5\MyProject\Plugins\GKit\UnrealEngine\GKit\Intermediate\Build\Win64\x64\UnrealEditor\Development\GKit\Module.GKit.cpp"
-/FI"E:\Goulandis\UE5\MyProject\Intermediate\Build\Win64\x64\MyProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/FI"E:\Goulandis\UE5\MyProject\Plugins\GKit\UnrealEngine\GKit\Intermediate\Build\Win64\x64\UnrealEditor\Development\GKit\Definitions.GKit.h"
-/Yu"E:\Goulandis\UE5\MyProject\Intermediate\Build\Win64\x64\MyProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/Fp"E:\Goulandis\UE5\MyProject\Intermediate\Build\Win64\x64\MyProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
-/Fo"E:\Goulandis\UE5\MyProject\Plugins\GKit\UnrealEngine\GKit\Intermediate\Build\Win64\x64\UnrealEditor\Development\GKit\Module.GKit.cpp.obj"
-/sourceDependencies "E:\Goulandis\UE5\MyProject\Plugins\GKit\UnrealEngine\GKit\Intermediate\Build\Win64\x64\UnrealEditor\Development\GKit\Module.GKit.cpp.dep.json"
-@"E:\Goulandis\UE5\MyProject\Plugins\GKit\UnrealEngine\GKit\Intermediate\Build\Win64\x64\UnrealEditor\Development\GKit\GKit.Shared.rsp"
+"E:\Goulandis\UE5\LearnPCG54\Plugins\GKit\UnrealEngine-5.4\GKit\Intermediate\Build\Win64\x64\UnrealEditor\Development\GKit\Module.GKit.cpp"
+/FI"E:\Goulandis\UE5\LearnPCG54\Intermediate\Build\Win64\x64\LearnPCG54Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/FI"E:\Goulandis\UE5\LearnPCG54\Plugins\GKit\UnrealEngine-5.4\GKit\Intermediate\Build\Win64\x64\UnrealEditor\Development\GKit\Definitions.GKit.h"
+/Yu"E:\Goulandis\UE5\LearnPCG54\Intermediate\Build\Win64\x64\LearnPCG54Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/Fp"E:\Goulandis\UE5\LearnPCG54\Intermediate\Build\Win64\x64\LearnPCG54Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
+/Fo"E:\Goulandis\UE5\LearnPCG54\Plugins\GKit\UnrealEngine-5.4\GKit\Intermediate\Build\Win64\x64\UnrealEditor\Development\GKit\Module.GKit.cpp.obj"
+/sourceDependencies "E:\Goulandis\UE5\LearnPCG54\Plugins\GKit\UnrealEngine-5.4\GKit\Intermediate\Build\Win64\x64\UnrealEditor\Development\GKit\Module.GKit.cpp.dep.json"
+@"E:\Goulandis\UE5\LearnPCG54\Plugins\GKit\UnrealEngine-5.4\GKit\Intermediate\Build\Win64\x64\UnrealEditor\Development\GKit\GKit.Shared.rsp"
 /Zc:inline
 /nologo
 /Oi

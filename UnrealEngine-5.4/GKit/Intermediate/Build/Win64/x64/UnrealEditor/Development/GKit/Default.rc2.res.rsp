@@ -79,6 +79,6 @@
 /DORIGINAL_FILE_NAME="UnrealEditor-GKit.dll"
 /DBUILD_ICON_FILE_NAME="\"..\\Build\\Windows\\Resources\\Default.ico\""
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
-/DPROJECT_PRODUCT_IDENTIFIER=MyProject
-/fo "E:\Goulandis\UE5\MyProject\Plugins\GKit\UnrealEngine\GKit\Intermediate\Build\Win64\x64\UnrealEditor\Development\GKit\Default.rc2.res"
+/DPROJECT_PRODUCT_IDENTIFIER=LearnPCG54
+/fo "E:\Goulandis\UE5\LearnPCG54\Plugins\GKit\UnrealEngine-5.4\GKit\Intermediate\Build\Win64\x64\UnrealEditor\Development\GKit\Default.rc2.res"
 "..\Build\Windows\Resources\Default.rc2"

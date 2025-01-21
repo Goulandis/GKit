@@ -49,10 +49,16 @@ void EmptyLinkFunctionForGeneratedCodeGKitWebSocketFunLib() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGKitWebSocketFunLib_Close_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GNet|WebSocket" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// WebSocket\xe5\x85\xb3\xe9\x97\xad\n" },
+#endif
 		{ "ModuleRelativePath", "BPFunLib/GKitWebSocketFunLib.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "WebSocket\xe5\x85\xb3\xe9\x97\xad" },
+#endif
 	};
 #endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitWebSocketFunLib_Close_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitWebSocketFunLib, nullptr, "Close", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UGKitWebSocketFunLib_Close_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitWebSocketFunLib_Close_Statics::Function_MetaDataParams)) };
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitWebSocketFunLib_Close_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitWebSocketFunLib, nullptr, "Close", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitWebSocketFunLib_Close_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGKitWebSocketFunLib_Close_Statics::Function_MetaDataParams) };
 	UFunction* Z_Construct_UFunction_UGKitWebSocketFunLib_Close()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -88,13 +94,13 @@ void EmptyLinkFunctionForGeneratedCodeGKitWebSocketFunLib() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::NewProp_URL = { "URL", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GKitWebSocketFunLib_eventConnect_Parms, URL), METADATA_PARAMS(Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::NewProp_URL_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::NewProp_URL_MetaData)) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::NewProp_URL = { "URL", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(GKitWebSocketFunLib_eventConnect_Parms, URL), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::NewProp_URL_MetaData), Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::NewProp_URL_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::NewProp_Protocol_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::NewProp_Protocol = { "Protocol", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(GKitWebSocketFunLib_eventConnect_Parms, Protocol), METADATA_PARAMS(Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::NewProp_Protocol_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::NewProp_Protocol_MetaData)) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::NewProp_Protocol = { "Protocol", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(GKitWebSocketFunLib_eventConnect_Parms, Protocol), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::NewProp_Protocol_MetaData), Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::NewProp_Protocol_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::NewProp_URL,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::NewProp_Protocol,
@@ -102,11 +108,19 @@ void EmptyLinkFunctionForGeneratedCodeGKitWebSocketFunLib() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GKit|WebSocket" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// WebSockt\xe8\xbf\x9e\xe6\x8e\xa5\n" },
+#endif
 		{ "CPP_Default_Protocol", "ws" },
 		{ "ModuleRelativePath", "BPFunLib/GKitWebSocketFunLib.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "WebSockt\xe8\xbf\x9e\xe6\x8e\xa5" },
+#endif
 	};
 #endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitWebSocketFunLib, nullptr, "Connect", nullptr, nullptr, sizeof(Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::GKitWebSocketFunLib_eventConnect_Parms), Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::Function_MetaDataParams)) };
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitWebSocketFunLib, nullptr, "Connect", nullptr, nullptr, Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::GKitWebSocketFunLib_eventConnect_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_UGKitWebSocketFunLib_Connect_Statics::GKitWebSocketFunLib_eventConnect_Parms) < MAX_uint16);
 	UFunction* Z_Construct_UFunction_UGKitWebSocketFunLib_Connect()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -135,10 +149,12 @@ void EmptyLinkFunctionForGeneratedCodeGKitWebSocketFunLib() {}
 		(UObject* (*)())Z_Construct_UClass_UBlueprintFunctionLibrary,
 		(UObject* (*)())Z_Construct_UPackage__Script_GKit,
 	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UGKitWebSocketFunLib_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_UGKitWebSocketFunLib_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UGKitWebSocketFunLib_Close, "Close" }, // 1079750904
-		{ &Z_Construct_UFunction_UGKitWebSocketFunLib_Connect, "Connect" }, // 1256924283
+		{ &Z_Construct_UFunction_UGKitWebSocketFunLib_Close, "Close" }, // 2677197931
+		{ &Z_Construct_UFunction_UGKitWebSocketFunLib_Connect, "Connect" }, // 1536802556
 	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UGKitWebSocketFunLib_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGKitWebSocketFunLib_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "BPFunLib/GKitWebSocketFunLib.h" },
@@ -161,7 +177,7 @@ void EmptyLinkFunctionForGeneratedCodeGKitWebSocketFunLib() {}
 		0,
 		0,
 		0x001000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UGKitWebSocketFunLib_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UGKitWebSocketFunLib_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGKitWebSocketFunLib_Statics::Class_MetaDataParams), Z_Construct_UClass_UGKitWebSocketFunLib_Statics::Class_MetaDataParams)
 	};
 	UClass* Z_Construct_UClass_UGKitWebSocketFunLib()
 	{
@@ -175,17 +191,18 @@ void EmptyLinkFunctionForGeneratedCodeGKitWebSocketFunLib() {}
 	{
 		return UGKitWebSocketFunLib::StaticClass();
 	}
+	UGKitWebSocketFunLib::UGKitWebSocketFunLib(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UGKitWebSocketFunLib);
 	UGKitWebSocketFunLib::~UGKitWebSocketFunLib() {}
-	struct Z_CompiledInDeferFile_FID_Live_UE51_Plugins_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_Statics
+	struct Z_CompiledInDeferFile_FID_ueVideo_0_Plugins_GKit_UnrealEngine_5_3_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Live_UE51_Plugins_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UGKitWebSocketFunLib, UGKitWebSocketFunLib::StaticClass, TEXT("UGKitWebSocketFunLib"), &Z_Registration_Info_UClass_UGKitWebSocketFunLib, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGKitWebSocketFunLib), 3403328718U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ueVideo_0_Plugins_GKit_UnrealEngine_5_3_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_UGKitWebSocketFunLib, UGKitWebSocketFunLib::StaticClass, TEXT("UGKitWebSocketFunLib"), &Z_Registration_Info_UClass_UGKitWebSocketFunLib, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGKitWebSocketFunLib), 2322360843U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Live_UE51_Plugins_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_2134805705(TEXT("/Script/GKit"),
-		Z_CompiledInDeferFile_FID_Live_UE51_Plugins_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Live_UE51_Plugins_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ueVideo_0_Plugins_GKit_UnrealEngine_5_3_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_2639456859(TEXT("/Script/GKit"),
+		Z_CompiledInDeferFile_FID_ueVideo_0_Plugins_GKit_UnrealEngine_5_3_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ueVideo_0_Plugins_GKit_UnrealEngine_5_3_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

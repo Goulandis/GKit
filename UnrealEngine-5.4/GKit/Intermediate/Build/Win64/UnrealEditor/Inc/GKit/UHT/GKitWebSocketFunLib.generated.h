@@ -14,12 +14,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define GKIT_GKitWebSocketFunLib_generated_h
 
-#define FID_MyProject_Plugins_GKit_UnrealEngine_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_LearnPCG54_Plugins_GKit_UnrealEngine_5_4_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execClose); \
 	DECLARE_FUNCTION(execConnect);
 
 
-#define FID_MyProject_Plugins_GKit_UnrealEngine_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_LearnPCG54_Plugins_GKit_UnrealEngine_5_4_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUGKitWebSocketFunLib(); \
 	friend struct Z_Construct_UClass_UGKitWebSocketFunLib_Statics; \
@@ -28,7 +28,7 @@ public: \
 	DECLARE_SERIALIZER(UGKitWebSocketFunLib)
 
 
-#define FID_MyProject_Plugins_GKit_UnrealEngine_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_LearnPCG54_Plugins_GKit_UnrealEngine_5_4_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_12_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UGKitWebSocketFunLib(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -42,13 +42,13 @@ public: \
 	NO_API virtual ~UGKitWebSocketFunLib();
 
 
-#define FID_MyProject_Plugins_GKit_UnrealEngine_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_9_PROLOG
-#define FID_MyProject_Plugins_GKit_UnrealEngine_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_12_GENERATED_BODY \
+#define FID_LearnPCG54_Plugins_GKit_UnrealEngine_5_4_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_9_PROLOG
+#define FID_LearnPCG54_Plugins_GKit_UnrealEngine_5_4_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MyProject_Plugins_GKit_UnrealEngine_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_MyProject_Plugins_GKit_UnrealEngine_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_12_INCLASS_NO_PURE_DECLS \
-	FID_MyProject_Plugins_GKit_UnrealEngine_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_12_ENHANCED_CONSTRUCTORS \
+	FID_LearnPCG54_Plugins_GKit_UnrealEngine_5_4_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_LearnPCG54_Plugins_GKit_UnrealEngine_5_4_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_12_INCLASS_NO_PURE_DECLS \
+	FID_LearnPCG54_Plugins_GKit_UnrealEngine_5_4_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -56,7 +56,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> GKIT_API UClass* StaticClass<class UGKitWebSocketFunLib>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MyProject_Plugins_GKit_UnrealEngine_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h
+#define CURRENT_FILE_ID FID_LearnPCG54_Plugins_GKit_UnrealEngine_5_4_GKit_Source_GKit_BPFunLib_GKitWebSocketFunLib_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

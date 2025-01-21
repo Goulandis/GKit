@@ -1,6 +1,7 @@
 #include "GKitEditorFunLib.h"
 #include "IImageWrapperModule.h"
 #include "ObjectTools.h"
+#include "HAL/PlatformApplicationMisc.h"
 #include "Editor/UnrealEdEngine.h"
 #include "Misc/FileHelper.h"
 #include "ThumbnailRendering/ThumbnailManager.h"
@@ -65,4 +66,11 @@ void UGKitEditorFunLib::SaveAssetThumbnailByObject(const UObject* InObject, cons
 {
 	if(InObject == nullptr) return;
 	SaveAssetThumbnailByClass(InObject->GetClass(),SaveDir,ImageName,ImageType,Quality);
+}
+
+FString UGKitEditorFunLib::PasteContentFromClipboard()
+{
+	FString Content;
+	FPlatformApplicationMisc::ClipboardPaste(Content);
+	return Content;
 }

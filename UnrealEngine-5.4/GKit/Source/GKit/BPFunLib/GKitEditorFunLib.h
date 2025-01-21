@@ -54,7 +54,7 @@ class GKIT_API UGKitEditorFunLib : public UBlueprintFunctionLibrary
 		const FString& ImageName,
 		const EGkitImgFormat ImageType=EGkitImgFormat::PNG,
 		int32 Quality = 100);
-	// // 通过对象保存资产缩略图，使用了UnrealEd模块，不可打包
+	// 通过对象保存资产缩略图，使用了UnrealEd模块，不可打包
 	UFUNCTION(BlueprintCallable,Category="GKit|Editor")
 	static void SaveAssetThumbnailByObject(
 		const UObject* InObject,
@@ -62,4 +62,7 @@ class GKIT_API UGKitEditorFunLib : public UBlueprintFunctionLibrary
 		const FString& ImageName,
 		const EGkitImgFormat ImageType=EGkitImgFormat::PNG,
 		int32 Quality = 100);
+	// 从剪贴板拷贝内容
+	UFUNCTION(BlueprintCallable,Category="GKit|Editor")
+	static FString PasteContentFromClipboard();
 };

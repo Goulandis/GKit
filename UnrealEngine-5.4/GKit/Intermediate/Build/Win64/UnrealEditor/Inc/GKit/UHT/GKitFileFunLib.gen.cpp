@@ -55,7 +55,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGKitF
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGKitFileFunLib_GetAllSubdirectories_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_GetAllSubdirectories_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitFileFunLib_GetAllSubdirectories_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitFileFunLib, nullptr, "GetAllSubdirectories", nullptr, nullptr, Z_Construct_UFunction_UGKitFileFunLib_GetAllSubdirectories_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_GetAllSubdirectories_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGKitFileFunLib_GetAllSubdirectories_Statics::GKitFileFunLib_eventGetAllSubdirectories_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_GetAllSubdirectories_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGKitFileFunLib_GetAllSubdirectories_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitFileFunLib_GetAllSubdirectories_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitFileFunLib, nullptr, "GetAllSubdirectories", nullptr, nullptr, Z_Construct_UFunction_UGKitFileFunLib_GetAllSubdirectories_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_GetAllSubdirectories_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGKitFileFunLib_GetAllSubdirectories_Statics::GKitFileFunLib_eventGetAllSubdirectories_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_GetAllSubdirectories_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGKitFileFunLib_GetAllSubdirectories_Statics::Function_MetaDataParams) };
 static_assert(sizeof(Z_Construct_UFunction_UGKitFileFunLib_GetAllSubdirectories_Statics::GKitFileFunLib_eventGetAllSubdirectories_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UGKitFileFunLib_GetAllSubdirectories()
 {
@@ -114,7 +114,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGKitF
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGKitFileFunLib_GetFilesFromDir_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_GetFilesFromDir_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitFileFunLib_GetFilesFromDir_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitFileFunLib, nullptr, "GetFilesFromDir", nullptr, nullptr, Z_Construct_UFunction_UGKitFileFunLib_GetFilesFromDir_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_GetFilesFromDir_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGKitFileFunLib_GetFilesFromDir_Statics::GKitFileFunLib_eventGetFilesFromDir_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_GetFilesFromDir_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGKitFileFunLib_GetFilesFromDir_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitFileFunLib_GetFilesFromDir_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitFileFunLib, nullptr, "GetFilesFromDir", nullptr, nullptr, Z_Construct_UFunction_UGKitFileFunLib_GetFilesFromDir_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_GetFilesFromDir_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGKitFileFunLib_GetFilesFromDir_Statics::GKitFileFunLib_eventGetFilesFromDir_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_GetFilesFromDir_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGKitFileFunLib_GetFilesFromDir_Statics::Function_MetaDataParams) };
 static_assert(sizeof(Z_Construct_UFunction_UGKitFileFunLib_GetFilesFromDir_Statics::GKitFileFunLib_eventGetFilesFromDir_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UGKitFileFunLib_GetFilesFromDir()
 {
@@ -170,7 +170,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGKitF
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGKitFileFunLib_LoadImg2TextureFromFile_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_LoadImg2TextureFromFile_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitFileFunLib_LoadImg2TextureFromFile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitFileFunLib, nullptr, "LoadImg2TextureFromFile", nullptr, nullptr, Z_Construct_UFunction_UGKitFileFunLib_LoadImg2TextureFromFile_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_LoadImg2TextureFromFile_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGKitFileFunLib_LoadImg2TextureFromFile_Statics::GKitFileFunLib_eventLoadImg2TextureFromFile_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_LoadImg2TextureFromFile_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGKitFileFunLib_LoadImg2TextureFromFile_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitFileFunLib_LoadImg2TextureFromFile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitFileFunLib, nullptr, "LoadImg2TextureFromFile", nullptr, nullptr, Z_Construct_UFunction_UGKitFileFunLib_LoadImg2TextureFromFile_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_LoadImg2TextureFromFile_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGKitFileFunLib_LoadImg2TextureFromFile_Statics::GKitFileFunLib_eventLoadImg2TextureFromFile_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_LoadImg2TextureFromFile_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGKitFileFunLib_LoadImg2TextureFromFile_Statics::Function_MetaDataParams) };
 static_assert(sizeof(Z_Construct_UFunction_UGKitFileFunLib_LoadImg2TextureFromFile_Statics::GKitFileFunLib_eventLoadImg2TextureFromFile_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UGKitFileFunLib_LoadImg2TextureFromFile()
 {
@@ -238,7 +238,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGKitF
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGKitFileFunLib_ReadFileToArray_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_ReadFileToArray_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitFileFunLib_ReadFileToArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitFileFunLib, nullptr, "ReadFileToArray", nullptr, nullptr, Z_Construct_UFunction_UGKitFileFunLib_ReadFileToArray_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_ReadFileToArray_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGKitFileFunLib_ReadFileToArray_Statics::GKitFileFunLib_eventReadFileToArray_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_ReadFileToArray_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGKitFileFunLib_ReadFileToArray_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitFileFunLib_ReadFileToArray_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitFileFunLib, nullptr, "ReadFileToArray", nullptr, nullptr, Z_Construct_UFunction_UGKitFileFunLib_ReadFileToArray_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_ReadFileToArray_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGKitFileFunLib_ReadFileToArray_Statics::GKitFileFunLib_eventReadFileToArray_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_ReadFileToArray_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGKitFileFunLib_ReadFileToArray_Statics::Function_MetaDataParams) };
 static_assert(sizeof(Z_Construct_UFunction_UGKitFileFunLib_ReadFileToArray_Statics::GKitFileFunLib_eventReadFileToArray_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UGKitFileFunLib_ReadFileToArray()
 {
@@ -304,7 +304,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGKitF
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGKitFileFunLib_ReadFileToString_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_ReadFileToString_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitFileFunLib_ReadFileToString_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitFileFunLib, nullptr, "ReadFileToString", nullptr, nullptr, Z_Construct_UFunction_UGKitFileFunLib_ReadFileToString_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_ReadFileToString_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGKitFileFunLib_ReadFileToString_Statics::GKitFileFunLib_eventReadFileToString_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_ReadFileToString_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGKitFileFunLib_ReadFileToString_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitFileFunLib_ReadFileToString_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitFileFunLib, nullptr, "ReadFileToString", nullptr, nullptr, Z_Construct_UFunction_UGKitFileFunLib_ReadFileToString_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_ReadFileToString_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGKitFileFunLib_ReadFileToString_Statics::GKitFileFunLib_eventReadFileToString_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_ReadFileToString_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGKitFileFunLib_ReadFileToString_Statics::Function_MetaDataParams) };
 static_assert(sizeof(Z_Construct_UFunction_UGKitFileFunLib_ReadFileToString_Statics::GKitFileFunLib_eventReadFileToString_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UGKitFileFunLib_ReadFileToString()
 {
@@ -373,7 +373,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UGKitF
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UGKitFileFunLib_SaveStringToFile_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_SaveStringToFile_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitFileFunLib_SaveStringToFile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitFileFunLib, nullptr, "SaveStringToFile", nullptr, nullptr, Z_Construct_UFunction_UGKitFileFunLib_SaveStringToFile_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_SaveStringToFile_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGKitFileFunLib_SaveStringToFile_Statics::GKitFileFunLib_eventSaveStringToFile_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_SaveStringToFile_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGKitFileFunLib_SaveStringToFile_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGKitFileFunLib_SaveStringToFile_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGKitFileFunLib, nullptr, "SaveStringToFile", nullptr, nullptr, Z_Construct_UFunction_UGKitFileFunLib_SaveStringToFile_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_SaveStringToFile_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGKitFileFunLib_SaveStringToFile_Statics::GKitFileFunLib_eventSaveStringToFile_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGKitFileFunLib_SaveStringToFile_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGKitFileFunLib_SaveStringToFile_Statics::Function_MetaDataParams) };
 static_assert(sizeof(Z_Construct_UFunction_UGKitFileFunLib_SaveStringToFile_Statics::GKitFileFunLib_eventSaveStringToFile_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UGKitFileFunLib_SaveStringToFile()
 {
@@ -424,12 +424,12 @@ struct Z_Construct_UClass_UGKitFileFunLib_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UGKitFileFunLib_GetAllSubdirectories, "GetAllSubdirectories" }, // 2918680544
-		{ &Z_Construct_UFunction_UGKitFileFunLib_GetFilesFromDir, "GetFilesFromDir" }, // 1034671657
-		{ &Z_Construct_UFunction_UGKitFileFunLib_LoadImg2TextureFromFile, "LoadImg2TextureFromFile" }, // 3321927282
-		{ &Z_Construct_UFunction_UGKitFileFunLib_ReadFileToArray, "ReadFileToArray" }, // 4103605609
-		{ &Z_Construct_UFunction_UGKitFileFunLib_ReadFileToString, "ReadFileToString" }, // 4172868409
-		{ &Z_Construct_UFunction_UGKitFileFunLib_SaveStringToFile, "SaveStringToFile" }, // 615195395
+		{ &Z_Construct_UFunction_UGKitFileFunLib_GetAllSubdirectories, "GetAllSubdirectories" }, // 484423807
+		{ &Z_Construct_UFunction_UGKitFileFunLib_GetFilesFromDir, "GetFilesFromDir" }, // 3785365074
+		{ &Z_Construct_UFunction_UGKitFileFunLib_LoadImg2TextureFromFile, "LoadImg2TextureFromFile" }, // 523743246
+		{ &Z_Construct_UFunction_UGKitFileFunLib_ReadFileToArray, "ReadFileToArray" }, // 3286983086
+		{ &Z_Construct_UFunction_UGKitFileFunLib_ReadFileToString, "ReadFileToString" }, // 4073260946
+		{ &Z_Construct_UFunction_UGKitFileFunLib_SaveStringToFile, "SaveStringToFile" }, // 1790841631
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -475,14 +475,14 @@ UGKitFileFunLib::~UGKitFileFunLib() {}
 // End Class UGKitFileFunLib
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_MyProject_Plugins_GKit_UnrealEngine_GKit_Source_GKit_BPFunLib_GKitFileFunLib_h_Statics
+struct Z_CompiledInDeferFile_FID_LearnPCG54_Plugins_GKit_UnrealEngine_5_4_GKit_Source_GKit_BPFunLib_GKitFileFunLib_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UGKitFileFunLib, UGKitFileFunLib::StaticClass, TEXT("UGKitFileFunLib"), &Z_Registration_Info_UClass_UGKitFileFunLib, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGKitFileFunLib), 1709005330U) },
+		{ Z_Construct_UClass_UGKitFileFunLib, UGKitFileFunLib::StaticClass, TEXT("UGKitFileFunLib"), &Z_Registration_Info_UClass_UGKitFileFunLib, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGKitFileFunLib), 1117024159U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MyProject_Plugins_GKit_UnrealEngine_GKit_Source_GKit_BPFunLib_GKitFileFunLib_h_3453741683(TEXT("/Script/GKit"),
-	Z_CompiledInDeferFile_FID_MyProject_Plugins_GKit_UnrealEngine_GKit_Source_GKit_BPFunLib_GKitFileFunLib_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MyProject_Plugins_GKit_UnrealEngine_GKit_Source_GKit_BPFunLib_GKitFileFunLib_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LearnPCG54_Plugins_GKit_UnrealEngine_5_4_GKit_Source_GKit_BPFunLib_GKitFileFunLib_h_2947859245(TEXT("/Script/GKit"),
+	Z_CompiledInDeferFile_FID_LearnPCG54_Plugins_GKit_UnrealEngine_5_4_GKit_Source_GKit_BPFunLib_GKitFileFunLib_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LearnPCG54_Plugins_GKit_UnrealEngine_5_4_GKit_Source_GKit_BPFunLib_GKitFileFunLib_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration
