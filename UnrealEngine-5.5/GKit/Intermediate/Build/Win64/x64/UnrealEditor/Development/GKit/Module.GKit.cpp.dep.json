@@ -1,0 +1,31 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\goulandis\\ue5\\myproject2\\plugins\\gkit\\unrealengine-5.5\\gkit\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\gkit\\module.gkit.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\goulandis\\ue5\\myproject2\\intermediate\\build\\win64\\x64\\myproject2editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\goulandis\\ue5\\myproject2\\plugins\\gkit\\unrealengine-5.5\\gkit\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\gkit\\definitions.gkit.h",
+            "e:\\goulandis\\ue5\\myproject2\\plugins\\gkit\\unrealengine-5.5\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\gkit.init.gen.cpp",
+            "e:\\goulandis\\ue5\\myproject2\\plugins\\gkit\\unrealengine-5.5\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\gkiteditorfunlib.gen.cpp",
+            "e:\\goulandis\\ue5\\myproject2\\plugins\\gkit\\unrealengine-5.5\\gkit\\source\\gkit\\bpfunlib\\gkiteditorfunlib.h",
+            "c:\\ue_5.5\\engine\\source\\runtime\\imagewrapper\\public\\iimagewrapper.h",
+            "c:\\ue_5.5\\engine\\source\\runtime\\imagewrapper\\public\\imagewrapperoutputtypes.h",
+            "e:\\goulandis\\ue5\\myproject2\\plugins\\gkit\\unrealengine-5.5\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\gkiteditorfunlib.generated.h",
+            "e:\\goulandis\\ue5\\myproject2\\plugins\\gkit\\unrealengine-5.5\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\gkitfilefunlib.gen.cpp",
+            "e:\\goulandis\\ue5\\myproject2\\plugins\\gkit\\unrealengine-5.5\\gkit\\source\\gkit\\bpfunlib\\gkitfilefunlib.h",
+            "e:\\goulandis\\ue5\\myproject2\\plugins\\gkit\\unrealengine-5.5\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\gkitfilefunlib.generated.h",
+            "e:\\goulandis\\ue5\\myproject2\\plugins\\gkit\\unrealengine-5.5\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\gkitstrfunlib.gen.cpp",
+            "e:\\goulandis\\ue5\\myproject2\\plugins\\gkit\\unrealengine-5.5\\gkit\\source\\gkit\\bpfunlib\\gkitstrfunlib.h",
+            "e:\\goulandis\\ue5\\myproject2\\plugins\\gkit\\unrealengine-5.5\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\gkitstrfunlib.generated.h",
+            "e:\\goulandis\\ue5\\myproject2\\plugins\\gkit\\unrealengine-5.5\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\gkitwebsocketfunlib.gen.cpp",
+            "e:\\goulandis\\ue5\\myproject2\\plugins\\gkit\\unrealengine-5.5\\gkit\\source\\gkit\\bpfunlib\\gkitwebsocketfunlib.h",
+            "c:\\ue_5.5\\engine\\source\\runtime\\online\\websockets\\public\\iwebsocket.h",
+            "e:\\goulandis\\ue5\\myproject2\\plugins\\gkit\\unrealengine-5.5\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\gkitwebsocketfunlib.generated.h",
+            "e:\\goulandis\\ue5\\myproject2\\plugins\\gkit\\unrealengine-5.5\\gkit\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\gkit\\permoduleinline.gen.cpp",
+            "c:\\ue_5.5\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
