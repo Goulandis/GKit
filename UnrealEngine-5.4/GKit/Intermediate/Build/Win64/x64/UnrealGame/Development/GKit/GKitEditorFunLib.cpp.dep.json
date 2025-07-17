@@ -1,0 +1,37 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\projects\\spacei_shoubo\\plugins\\gkit\\gkit\\source\\gkit\\bpfunlib\\gkiteditorfunlib.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\projects\\spacei_shoubo\\intermediate\\build\\win64\\x64\\xfstream55\\development\\engine\\sharedpch.engine.project.valapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "e:\\projects\\spacei_shoubo\\plugins\\gkit\\gkit\\intermediate\\build\\win64\\x64\\unrealgame\\development\\gkit\\definitions.gkit.h",
+            "e:\\projects\\spacei_shoubo\\plugins\\gkit\\gkit\\source\\gkit\\bpfunlib\\gkiteditorfunlib.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\imagewrapper\\public\\iimagewrapper.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\imagewrapper\\public\\imagewrapperoutputtypes.h",
+            "e:\\projects\\spacei_shoubo\\plugins\\gkit\\gkit\\intermediate\\build\\win64\\unrealgame\\inc\\gkit\\uht\\gkiteditorfunlib.generated.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\imagewrapper\\public\\iimagewrappermodule.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\applicationcore\\public\\hal\\platformapplicationmisc.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\applicationcore\\public\\windows\\windowsplatformapplicationmisc.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\applicationcore\\public\\genericplatform\\genericplatformapplicationmisc.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\engine\\assetmanager.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\engine\\assetmanagertypes.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\assetmanagertypes.generated.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\coreuobject\\public\\misc\\assetregistryinterface.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\engine\\streamablemanager.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\coreuobject\\public\\misc\\packageaccesstracking.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\misc\\sourcelocation.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\source_location",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\misc\\sourcelocationutils.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\assetregistry\\public\\assetregistry\\assetregistrymodule.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\assetregistry\\public\\assetregistry\\iassetregistry.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\coreuobject\\public\\assetregistry\\arfilter.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\assetregistry\\uht\\iassetregistry.generated.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\genericplatform\\genericplatformchunkinstall.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\engine\\contentencryptionconfig.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\assetmanager.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

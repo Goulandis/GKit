@@ -1,6 +1,5 @@
 #include "GKitWebSocketFunLib.h"
 #include "WebSocketsModule.h"
-#include "Blueprint/UserWidget.h"
 
 TSharedPtr<IWebSocket> UGKitWebSocketFunLib::WebSocket = nullptr;
 FString UGKitWebSocketFunLib::ServerURL = "";

@@ -1,0 +1,32 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\projects\\dhds\\plugins\\gkit\\gkit\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\gkit\\module.gkit.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\projects\\dhds\\intermediate\\build\\win64\\x64\\dhdseditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\projects\\dhds\\plugins\\gkit\\gkit\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\gkit\\definitions.gkit.h",
+            "e:\\projects\\dhds\\plugins\\gkit\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\axisactor.gen.cpp",
+            "e:\\projects\\dhds\\plugins\\gkit\\gkit\\source\\gkit\\public\\axisactor.h",
+            "e:\\projects\\dhds\\plugins\\gkit\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\axisactor.generated.h",
+            "e:\\projects\\dhds\\plugins\\gkit\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\gkit.init.gen.cpp",
+            "e:\\projects\\dhds\\plugins\\gkit\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\gkiteditorfunlib.gen.cpp",
+            "e:\\projects\\dhds\\plugins\\gkit\\gkit\\source\\gkit\\bpfunlib\\gkiteditorfunlib.h",
+            "d:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\imagewrapper\\public\\iimagewrapper.h",
+            "e:\\projects\\dhds\\plugins\\gkit\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\gkiteditorfunlib.generated.h",
+            "e:\\projects\\dhds\\plugins\\gkit\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\gkitfilefunlib.gen.cpp",
+            "e:\\projects\\dhds\\plugins\\gkit\\gkit\\source\\gkit\\bpfunlib\\gkitfilefunlib.h",
+            "e:\\projects\\dhds\\plugins\\gkit\\gkit\\source\\gkit\\public\\gkit.h",
+            "e:\\projects\\dhds\\plugins\\gkit\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\gkitfilefunlib.generated.h",
+            "e:\\projects\\dhds\\plugins\\gkit\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\gkitstrfunlib.gen.cpp",
+            "e:\\projects\\dhds\\plugins\\gkit\\gkit\\source\\gkit\\bpfunlib\\gkitstrfunlib.h",
+            "e:\\projects\\dhds\\plugins\\gkit\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\gkitstrfunlib.generated.h",
+            "e:\\projects\\dhds\\plugins\\gkit\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\gkitwebsocketfunlib.gen.cpp",
+            "e:\\projects\\dhds\\plugins\\gkit\\gkit\\source\\gkit\\bpfunlib\\gkitwebsocketfunlib.h",
+            "d:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\online\\websockets\\public\\iwebsocket.h",
+            "e:\\projects\\dhds\\plugins\\gkit\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\gkitwebsocketfunlib.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

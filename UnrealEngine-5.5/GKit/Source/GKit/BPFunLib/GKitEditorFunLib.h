@@ -31,6 +31,7 @@ enum class EGkitImgFormat : uint8
 	DDS,
 };
 
+
 UCLASS()
 class GKIT_API UGKitEditorFunLib : public UBlueprintFunctionLibrary
 {
@@ -38,6 +39,8 @@ class GKIT_API UGKitEditorFunLib : public UBlueprintFunctionLibrary
 	
 	static TMap<EGkitImgFormat,EImageFormat> ImageFormatMap;
 
+
+#if WITH_EDITOR
 	// 保存资产缩略图，使用了UnrealEd模块，不可打包
 	UFUNCTION(BlueprintCallable,Category="GKit|Editor")
 	static void SaveAssetThumbnail(
@@ -62,7 +65,11 @@ class GKIT_API UGKitEditorFunLib : public UBlueprintFunctionLibrary
 		const FString& ImageName,
 		const EGkitImgFormat ImageType=EGkitImgFormat::PNG,
 		int32 Quality = 100);
+
+#endif
+
 	// 从剪贴板拷贝内容
 	UFUNCTION(BlueprintCallable,Category="GKit|Editor")
 	static FString PasteContentFromClipboard();
+
 };

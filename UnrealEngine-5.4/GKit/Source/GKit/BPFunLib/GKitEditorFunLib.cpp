@@ -1,12 +1,15 @@
 #include "GKitEditorFunLib.h"
 #include "IImageWrapperModule.h"
-#include "ObjectTools.h"
 #include "HAL/PlatformApplicationMisc.h"
-#include "Editor/UnrealEdEngine.h"
 #include "Misc/FileHelper.h"
+#include "Engine/AssetManager.h"
+
+#if WITH_EDITOR
+#include "Editor/UnrealEdEngine.h"
+#include "ObjectTools.h"
 #include "ThumbnailRendering/ThumbnailManager.h"
 #include "Misc/ObjectThumbnail.h"
-#include "Engine/AssetManager.h"
+#endif
 
 TMap<EGkitImgFormat,EImageFormat> UGKitEditorFunLib::ImageFormatMap = {
 	{EGkitImgFormat::PNG,EImageFormat::PNG},
@@ -21,6 +24,8 @@ TMap<EGkitImgFormat,EImageFormat> UGKitEditorFunLib::ImageFormatMap = {
 	{EGkitImgFormat::TIFF,EImageFormat::TIFF},
 	{EGkitImgFormat::DDS,EImageFormat::DDS}
 };
+
+#if WITH_EDITOR
 
 void UGKitEditorFunLib::SaveAssetThumbnail(const FAssetData& AssetData,const FString& SaveDir,const FString& ImageName,const EGkitImgFormat ImageType,int32 Quality) {
 	FString PackageFilename;
@@ -68,9 +73,12 @@ void UGKitEditorFunLib::SaveAssetThumbnailByObject(const UObject* InObject, cons
 	SaveAssetThumbnailByClass(InObject->GetClass(),SaveDir,ImageName,ImageType,Quality);
 }
 
+#endif
+
 FString UGKitEditorFunLib::PasteContentFromClipboard()
 {
 	FString Content;
 	FPlatformApplicationMisc::ClipboardPaste(Content);
 	return Content;
 }
+

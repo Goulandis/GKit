@@ -1,0 +1,21 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\projects\\spacei_shoubo\\plugins\\gkit\\gkit\\source\\gkit\\bpfunlib\\gkitcommonfunlib.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\projects\\spacei_shoubo\\intermediate\\build\\win64\\x64\\xfstream55editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "e:\\projects\\spacei_shoubo\\plugins\\gkit\\gkit\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\gkit\\definitions.gkit.h",
+            "e:\\projects\\spacei_shoubo\\plugins\\gkit\\gkit\\source\\gkit\\bpfunlib\\gkitcommonfunlib.h",
+            "e:\\projects\\spacei_shoubo\\plugins\\gkit\\gkit\\source\\gkit\\public\\gkit.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\kismet\\blueprintasyncactionbase.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\blueprintasyncactionbase.generated.h",
+            "e:\\projects\\spacei_shoubo\\plugins\\gkit\\gkit\\intermediate\\build\\win64\\unrealeditor\\inc\\gkit\\uht\\gkitcommonfunlib.generated.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetsystemlibrary.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "d:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetsystemlibrary.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

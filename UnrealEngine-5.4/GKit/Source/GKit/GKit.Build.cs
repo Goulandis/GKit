@@ -27,13 +27,11 @@ public class GKit : ModuleRules
 			{
 				"Core",
 				"WebSockets",
-				"UnrealEd",
 				"ApplicationCore"
 			}
-			);
-			
-		
-		PrivateDependencyModuleNames.AddRange(
+        );
+
+        PrivateDependencyModuleNames.AddRange(
 			new string[]
 			{
 				"CoreUObject",
@@ -50,5 +48,14 @@ public class GKit : ModuleRules
 				// ... add any modules that your module loads dynamically here ...
 			}
 			);
+
+		if (Target.Type == TargetType.Editor)
+		{
+			PrivateDependencyModuleNames.AddRange(
+					new string[] { 
+						"UnrealEd"
+					}
+				);
+		}
 	}
 }
