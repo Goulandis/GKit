@@ -1,0 +1,826 @@
+{
+	"Debug":{
+		"Menu":false,
+		"Body":{
+			"Type":"String",
+			"Data":"Debug"
+		}
+	},
+	"欢迎页":{
+		"Menu":true,
+		"首页":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "Welcome",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Welcome": {
+						"function": "SwitchModule",
+						"data": {}
+					}
+				}
+			}
+		},
+		"总览":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "Welcome",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Welcome": {
+						"function": "SelectArea",
+						"data": {}
+					}
+				}
+			}
+		}
+	},
+	"园区总览":{
+		"Menu":false,
+		"Body":{
+			"Type":"Json",
+			"Data":{
+				"hdr": {
+					"cmd": "Home",
+					"topic": "viot/v1/{taskid}/from/js/to/ue"
+				},
+				"Home": {
+					"function": "SwitchModule",
+					"data": {}
+				}
+			}
+		}
+	},
+	"能耗":{
+		"Menu":true,
+		"开":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "item",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"item": {
+						"function": "showsise"
+					}
+				}
+			}
+		},
+		"关":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "item",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"item": {
+						"function": "hidesie"
+					}
+				}
+			}
+		}
+	},
+	"安全":{
+		"Menu":true,
+		"首页":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "Safe",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Safe": {
+						"function": "SwitchModule",
+						"data":{}
+					}
+				}
+			}
+		},
+		"安防":{
+			"Menu":true,
+			"周界-开":{
+				"Menu":false,
+				"Body":{
+					"Type":"Json",
+					"Data":{
+					"hdr": {
+						"cmd": "Park",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Park": {
+						"function": "SetVisibleOfQiYeQuYU",
+						"data": {
+							"tag":"All",
+							"allin":true,
+							"visible":true
+							}
+						}
+					}
+				}
+			},
+			"周界-关":{
+				"Menu":false,
+				"Body":{
+					"Type":"Json",
+					"Data":{
+					"hdr": {
+						"cmd": "Park",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Park": {
+						"function": "SetVisibleOfQiYeQuYU",
+						"data": {
+							"tag":"All",
+							"allin":false,
+							"visible":true
+							}
+						}
+					}
+				}
+			},
+			"鹰眼-开":{
+				"Menu":false,
+				"Body":{
+					"Type":"Json",
+					"Data":{
+						"hdr": {
+							"cmd": "Safe",
+							"topic": "viot/v1/{taskid}/from/js/to/ue"
+						},
+						"Safe": {
+							"function": "Security",
+							"data":{
+								"action":"FilterCamera",
+								"value":"EagleEyeCamera",
+								"visible":true
+							}
+						}
+					}
+				}
+			},
+			"鹰眼-关":{
+				"Menu":false,
+				"Body":{
+					"Type":"Json",
+					"Data":{
+						"hdr": {
+							"cmd": "Safe",
+							"topic": "viot/v1/{taskid}/from/js/to/ue"
+						},
+						"Safe": {
+							"function": "Security",
+							"data":{
+								"action":"FilterCamera",
+								"value":"EagleEyeCamera",
+								"visible":false
+							}
+						}
+					}
+				}
+			},
+			"普通-开":{
+				"Menu":false,
+				"Body":{
+					"Type":"Json",
+					"Data":{
+						"hdr": {
+							"cmd": "Safe",
+							"topic": "viot/v1/{taskid}/from/js/to/ue"
+						},
+						"Safe": {
+							"function": "Security",
+							"data":{
+								"action":"FilterCamera",
+								"value":"NormalCamera",
+								"visible":true
+							}
+						}
+					}
+				}
+			},
+			"普通-关":{
+				"Menu":false,
+				"Body":{
+					"Type":"Json",
+					"Data":{
+						"hdr": {
+							"cmd": "Safe",
+							"topic": "viot/v1/{taskid}/from/js/to/ue"
+						},
+						"Safe": {
+							"function": "Security",
+							"data":{
+								"action":"FilterCamera",
+								"value":"NormalCamera",
+								"visible":false
+							}
+						}
+					}
+				}
+			},
+			"AI-开":{
+				"Menu":false,
+				"Body":{
+					"Type":"Json",
+					"Data":{
+						"hdr": {
+							"cmd": "Safe",
+							"topic": "viot/v1/{taskid}/from/js/to/ue"
+						},
+						"Safe": {
+							"function": "Security",
+							"data":{
+								"action":"FilterCamera",
+								"value":"AICamera",
+								"visible":true
+							}
+						}
+					}
+				}
+			},
+			"AI-关":{
+				"Menu":false,
+				"Body":{
+					"Type":"Json",
+					"Data":{
+						"hdr": {
+							"cmd": "Safe",
+							"topic": "viot/v1/{taskid}/from/js/to/ue"
+						},
+						"Safe": {
+							"function": "Security",
+							"data":{
+								"action":"FilterCamera",
+								"value":"AICamera",
+								"visible":false
+							}
+						}
+					}
+				}
+			}
+		},
+		"消防":{
+			"Menu":true,
+			"开":{
+				"Menu":false,
+				"Body":{
+					"Type":"Json",
+					"Data":{
+						"hdr": {
+							"cmd": "Safe",
+							"topic": "viot/v1/{taskid}/from/js/to/ue"
+						},
+						"Safe": {
+							"function": "Firefighting",
+							"data":{
+								"action":"Firefighting",
+								"visible":true
+							}
+						}
+					}
+				}
+			},
+			"关":{
+				"Menu":false,
+				"Body":{
+					"Type":"Json",
+					"Data":{
+						"hdr": {
+							"cmd": "Safe",
+							"topic": "viot/v1/{taskid}/from/js/to/ue"
+						},
+						"Safe": {
+							"function": "Firefighting",
+							"data":{
+								"action":"Firefighting",
+								"visible":false
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"通行":{
+		"Menu":true,
+		"首页":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "Transit",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Transit": {
+						"function": "SwitchModule",
+						"data":{}
+					}
+				}
+			}
+		},
+		"人员":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "Transit",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Transit": {
+						"function": "Access",
+						"data":{
+							"visible":true
+						}
+					}
+				}
+			}
+		},
+		"车辆":{
+			"Menu":true,
+			"开":{
+				"Menu":false,
+				"Body":{
+					"Type":"Json",
+					"Data":{
+						"hdr": {
+							"cmd": "Transit",
+							"topic": "viot/v1/{taskid}/from/js/to/ue"
+						},
+						"Transit": {
+							"function": "ParkingSpace",
+							"data":{
+								"visible":true
+							}
+						}
+					}
+				}
+			},
+			"关":{
+				"Menu":false,
+				"Body":{
+					"Type":"Json",
+					"Data":{
+						"hdr": {
+							"cmd": "Transit",
+							"topic": "viot/v1/{taskid}/from/js/to/ue"
+						},
+						"Transit": {
+							"function": "ParkingSpace",
+							"data":{
+								"visible":false
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"配电":{
+		"Menu":true,
+		"首页":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "Electricity",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Electricity": {
+						"function": "SwitchModule",
+						"data":{}
+					}
+				}
+			}
+		},
+		"A区":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "Electricity",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Electricity": {
+						"function": "SwitchDistributionRoom",
+						"data":{
+							"value":"A区"
+						}
+					}
+				}
+			}
+		},
+		"A区配电房":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "Electricity",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Electricity": {
+						"function": "SwitchDistributionRoom",
+						"data":{
+							"value":"A区R#1F"
+						}
+					}
+				}
+			}
+		},
+		"B区":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "Electricity",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Electricity": {
+						"function": "SwitchDistributionRoom",
+						"data":{
+							"value":"B区"
+						}
+					}
+				}
+			}
+		},
+		"B区配电房":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "Electricity",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Electricity": {
+						"function": "SwitchDistributionRoom",
+						"data":{
+							"value":"B区R#1F"
+						}
+					}
+				}
+			}
+		}
+	},
+	"巡检":{
+		"Menu":true,
+		"首页":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "Inspection",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Inspection": {
+						"function": "SwitchModule",
+						"data":{}
+					}
+				}
+			}
+		},
+		"巡检路线":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "Inspection",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Inspection": {
+						"function": "ShowInspectionRoute",
+						"data":{}
+					}
+				}
+			}
+		},
+		"机器狗-开":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "Inspection",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Inspection": {
+						"function": "RobotDogView",
+						"data":{
+							"visible":true
+						}
+					}
+				}
+			}
+		},
+		"机器狗-关":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "Inspection",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Inspection": {
+						"function": "RobotDogView",
+						"data":{
+							"visible":false
+						}
+					}
+				}
+			}
+		}
+	},
+	"天气":{
+		"Menu":true,
+		"白天":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "weathercontrol",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"weathercontrol": {
+						"function": "SetTime",
+						"data": {
+							"Time":"白天"
+						}
+					}
+				}
+			}
+		},
+		"夜晚":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "weathercontrol",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"weathercontrol": {
+						"function": "SetTime",
+						"data": {
+							"Time":"夜晚"
+						}
+					}
+				}
+			}
+		},
+		"晴天":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "weathercontrol",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"weathercontrol": {
+						"function": "SetWeather",
+						"data": {
+							"weather":"晴天"
+						}
+					}
+				}
+			}
+		},
+		"雨天":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "weathercontrol",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"weathercontrol": {
+						"function": "SetWeather",
+						"data": {
+							"weather":"雨天"
+						}
+					}
+				}
+			}
+		},
+		"雪天":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "weathercontrol",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"weathercontrol": {
+						"function": "SetWeather",
+						"data": {
+							"weather":"雪天"
+						}
+					}
+				}
+			}
+		}
+	},
+	"园区切换":{
+		"Menu":true,
+		"A区":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "Park",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Park": {
+						"function": "SetVisibleOfQiYeQuYU",
+						"data": {
+							"tag":"A区",
+							"allin":false,
+							"visible":true
+						}
+					}
+				}
+			}
+		},
+		"B区":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "Park",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Park": {
+						"function": "SetVisibleOfQiYeQuYU",
+						"data": {
+							"tag":"B区",
+							"allin":false,
+							"visible":true
+						}
+					}
+				}
+			}
+		}
+	},
+	"漫游":{
+		"Menu":true,
+		"飞行漫游":{
+			"Menu":true,
+			"开":{
+				"Menu":false,
+				"Body":{
+					"Type":"Json",
+					"Data":{
+						"hdr": {
+							"cmd": "RoamModule",
+							"topic": "viot/v1/{taskid}/from/js/to/ue"
+						},
+						"RoamModule": {
+							"function": "FlyingRoaming",
+							"data":{
+								"visible":true
+							}
+						}
+					}
+				}
+			},
+			"关":{
+				"Menu":false,
+				"Body":{
+					"Type":"Json",
+					"Data":{
+						"hdr": {
+							"cmd": "RoamModule",
+							"topic": "viot/v1/{taskid}/from/js/to/ue"
+						},
+						"RoamModule": {
+							"function": "FlyingRoaming",
+							"data":{
+								"visible":false
+							}
+						}
+					}
+				}
+			}
+		},
+		"行走漫游":{
+			"Menu":true,
+			"开":{
+				"Menu":false,
+				"Body":{
+					"Type":"Json",
+					"Data":{
+						"hdr": {
+							"cmd": "RoamModule",
+							"topic": "viot/v1/{taskid}/from/js/to/ue"
+						},
+						"RoamModule": {
+							"function": "WorkingRoaming",
+							"data":{
+								"visible":true
+							}
+						}
+					}
+				}
+			},
+			"关":{
+				"Menu":false,
+				"Body":{
+					"Type":"Json",
+					"Data":{
+						"hdr": {
+							"cmd": "RoamModule",
+							"topic": "viot/v1/{taskid}/from/js/to/ue"
+						},
+						"RoamModule": {
+							"function": "WorkingRoaming",
+							"data":{
+								"visible":false
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"告警":{
+		"Menu":true,
+		"首页":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "Warning",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Waring": {
+						"function": "SwitchModule",
+						"data":{}
+					}
+				}
+			}
+		},
+		"告警-开":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "Warning",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Waring": {
+						"function": "ShowWarningPOI",
+						"data":{
+							"visible":true
+						}
+					}
+				}
+			}
+		},
+		"告警-关":{
+			"Menu":false,
+			"Body":{
+				"Type":"Json",
+				"Data":{
+					"hdr": {
+						"cmd": "Warning",
+						"topic": "viot/v1/{taskid}/from/js/to/ue"
+					},
+					"Waring": {
+						"function": "ShowWarningPOI",
+						"data":{
+							"visible":false
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -3,7 +3,10 @@
 #include "Windows/AllowWindowsPlatformTypes.h"
 #include "Windows/MinWindows.h"
 #include "Windows/HideWindowsPlatformTypes.h"
-#include "../../../../CPlus/Common/GKitStr.h"
+#include "GKitStr.h"
+#include "Misc/AES.h"
+#include "Misc/Base64.h"
+#include "Misc/FileHelper.h"
 
 FString UGKitStrFunLib::AESEncrypt(FString Input, FString Key)
 {
@@ -83,7 +86,7 @@ TArray<FString> UGKitStrFunLib::StringSplitToWords(FString InStr)
 	TArray<FString> OutWords;
 	for (std::string Word : Words)
 	{
-		OutWords.Add(FString(Word.c_str()));
+	 	OutWords.Add(FString(Word.c_str()));
 	}
 	return OutWords;
 }
@@ -98,7 +101,7 @@ void UGKitStrFunLib::EncodeToUtf8(FString& Result, const uint8* Buffer, int32 Si
 	}
 	else
 	{
-		// 将​多字节编码字符串​（如 ANSI、UTF - 8）转换为 ​宽字符（Unicode）字符串​（wchar_t）
+		// 将多字节编码字符串（如 ANSI、UTF - 8）转换为宽字符（Unicode）字符串（wchar_t）
 		// 成功：返回目标宽字符串的字符数（不包括终止符 \0）
 		// 失败：返回 0，可通过 GetLastError() 获取错误码（如 ERROR_INSUFFICIENT_BUFFER）	
 		int32 UnicodeLen = ::MultiByteToWideChar(CP_ACP, MB_PRECOMPOSED, reinterpret_cast<const ANSICHAR*>(Buffer), Size, nullptr, 0);

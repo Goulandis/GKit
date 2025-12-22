@@ -14,14 +14,14 @@ class GKIT_API UGKitStrFunLib : public UBlueprintFunctionLibrary
 public:
 
 	// 使用AES加密字符串
-	UFUNCTION(BlueprintCallable,Category="GKit|StrOpe")
+	UFUNCTION(BlueprintCallable,Category="GKit|String")
 	static FString AESEncrypt(FString Input,FString Key);
 	// 使用AES解密字符串
-	UFUNCTION(BlueprintCallable,Category="GKit|StrOpe")
+	UFUNCTION(BlueprintCallable,Category="GKit|String")
 	static FString AESDecrypt(FString Input,FString Key);
 
 	// 将字符串拆分成一个个的字
-	UFUNCTION(BlueprintCallable,BlueprintPure,Category = "GKit|StrOpe")
+	UFUNCTION(BlueprintCallable,BlueprintPure,Category = "GKit|String")
 	static TArray<FString> StringSplitToWords(FString InStr);
 
 	// 将其他编码的字符串转换为Utf8编码

@@ -2,7 +2,6 @@
 #include "IImageWrapperModule.h"
 #include "HAL/FileManager.h"
 #include "Windows/AllowWindowsPlatformTypes.h"
-//#include <windows.h>
 #include "Windows/MinWindows.h"
 #include "Windows/HideWindowsPlatformTypes.h"
 #include <codecvt>
@@ -11,8 +10,10 @@
 #include "GKitStrFunLib.h"
 #include "IDesktopPlatform.h"
 #include "DesktopPlatformModule.h"
-
-//DEFINE_LOG_CATEGORY(LogGKit);
+#include "Misc/Paths.h"
+#include "Misc/FileHelper.h"
+#include "Engine/Texture2D.h"
+#include "TextureResource.h"
 
 FString UGKitFileFunLib::ReadFileToString(const FString& Path, bool& Rel)
 {
@@ -159,6 +160,33 @@ void UGKitFileFunLib::WriteCsv(FString Path, TArray<FGKitCsvData> CsvData)
 		Content += RowStr + LINE_TERMINATOR;
 	}
 	FFileHelper::SaveStringToFile(Content, *Path,FFileHelper::EEncodingOptions::ForceUTF8);
+}
+
+void UGKitFileFunLib::ConvertCvsDataToCsvDataWithHeader(const TArray<FGKitCsvData>& CsvData,TArray<FGkitCsvDataWithHeader>& CsvDataWithHeader)
+{
+	if(CsvData.IsEmpty())
+	{
+		UE_LOG(LogGKit,Error,TEXT("Array CsvData is empty"));
+		return;
+	}
+	if(CsvData.Num() <= 1)
+	{
+		UE_LOG(LogGKit,Warning,TEXT("The datasheet has only the header"));
+		return;
+	}
+	FGKitCsvData TableHeader = CsvData[0];
+	for(int i=1;i<CsvData.Num();++i)
+	{
+		FGKitCsvData DataRow = CsvData[i];
+		TMap<FString,FString> LineMap;
+		for(int j=0;j<DataRow.Data.Num();++j)
+		{
+			LineMap.Add(TableHeader.Data[j],DataRow.Data[j]);
+		}
+		FGkitCsvDataWithHeader Data;
+		Data.Data = LineMap;
+		CsvDataWithHeader.Add(Data);
+	}
 }
 
 

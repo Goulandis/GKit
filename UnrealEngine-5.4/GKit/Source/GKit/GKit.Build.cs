@@ -1,12 +1,13 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
 using UnrealBuildTool;
+using System.IO;
 
 public class GKit : ModuleRules
 {
 	public GKit(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+		//控制插件模块是否编译
+		bUsePrecompiled = false;
 		
 		PublicIncludePaths.AddRange(
 			new string[] {
@@ -57,5 +58,13 @@ public class GKit : ModuleRules
 					}
 				);
 		}
+		
+		RuntimeDependencies.Add(Path.Combine(ModuleDirectory,"../../", "Config/Debug.json"));
+
+		PublicIncludePaths.AddRange(
+			new string[]
+			{
+				Path.Combine(ModuleDirectory,"../../ThirdParty/CPlus/Common")
+			});
 	}
 }
