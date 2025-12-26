@@ -8,7 +8,7 @@ public class GKit : ModuleRules
 	public GKit(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
-		bUsePrecompiled = true;
+		bUsePrecompiled = false;
 		
 		PublicIncludePaths.AddRange(
 			new string[] {

@@ -7,6 +7,7 @@
 #include "Misc/AES.h"
 #include "Misc/Base64.h"
 #include "Misc/FileHelper.h"
+#include <GenericPlatform/GenericPlatformDriver.h>
 
 FString UGKitStrFunLib::AESEncrypt(FString Input, FString Key)
 {
@@ -207,5 +208,48 @@ Encode UGKitStrFunLib::DetectEncode(const uint8* data, int32 size)
 	else
 	{
 		return EncodeIsUtf8(data, size);
+	}
+}
+
+void UGKitStrFunLib::GetCPUInfo(FString& UID, FString& Brand, FString& Vebdor)
+{
+	UID = FString::FromInt(FPlatformMisc::GetCPUInfo());
+	Brand = FPlatformMisc::GetCPUBrand();
+	Vebdor = FPlatformMisc::GetCPUVendor();
+}
+
+void UGKitStrFunLib::GetGPUInfo(FString& VendorId, FString& DeviceDescription, FString& ProviderName, FString& InternalDriverVersion, FString& UserDriverVersion, FString& DriverDate)
+{
+	FString GPUBrand = FPlatformMisc::GetPrimaryGPUBrand();
+	FGPUDriverInfo GPUINFO = FPlatformMisc::GetGPUDriverInfo(GPUBrand);
+	VendorId = FString::FromInt(GPUINFO.VendorId);
+	DeviceDescription = GPUINFO.DeviceDescription;
+	ProviderName = GPUINFO.ProviderName;
+	InternalDriverVersion = GPUINFO.InternalDriverVersion;
+	UserDriverVersion = GPUINFO.UserDriverVersion;
+	DriverDate = GPUINFO.DriverDate;
+}
+
+void UGKitStrFunLib::GetSystemScreenResolution(int& Length, int& Width)
+{
+	Length = GetSystemMetrics(SM_CXSCREEN);
+	Width = GetSystemMetrics(SM_CYSCREEN);
+}
+
+void UGKitStrFunLib::GetAASetttings(FString& AAMethod)
+{
+	const auto CVarAAMethod = IConsoleManager::Get().FindConsoleVariable(TEXT("r.AntiAliasingMethod"));
+	if (CVarAAMethod)
+	{
+		int32 AAMethodCode = CVarAAMethod->GetInt();
+		switch (AAMethodCode)
+		{
+		case 0: AAMethod = TEXT("None"); break;
+		case 1: AAMethod = TEXT("快速模拟抗锯齿(FXAA)"); break;
+		case 2: AAMethod = TEXT("临时抗锯齿(TAA)"); break;
+		case 3: AAMethod = TEXT("多重取样抗锯齿(MSAA)"); break;
+		case 4: AAMethod = TEXT("临时超分辨率(TSR)"); break;
+		case 5: AAMethod = TEXT("深度学习超级采样(DLSS)"); break;
+		}
 	}
 }

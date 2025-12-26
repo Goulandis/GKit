@@ -30,4 +30,28 @@ public:
 	static Encode EncodeIsUtf8(const uint8* data, int32 size);
 	// 判断字符是哪种编码
 	static Encode DetectEncode(const uint8* data, int32 size);
+
+	// 获取CPU信息
+	// UID ： CPU的唯一UID，
+	// Brand ： CPU的型号，
+	// Vebdor ： CPU的供应商名称
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "SettingsBPFunLib")
+	static void GetCPUInfo(FString& UID, FString& Brand, FString& Vebdor);
+	// 获取GPU信息
+	// VendorId : GPU供应商的ID，
+	// DeviceDescription ： GPU的型号描述，
+	// ProviderName ： GPU的设备供应商名称，
+	// InternalDriverVersion ： GPU的内部驱动版本号，
+	// UserDriverVersion ： 面向用户的驱动版本号，
+	// DriverDate ： 驱动的更新日期，
+	// RHIName ： 当前RHI名称。
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "SettingsBPFunLib")
+	static void GetGPUInfo(FString& VendorId, FString& DeviceDescription, FString& ProviderName, FString& InternalDriverVersion, FString& UserDriverVersion, FString& DriverDate);
+
+	// 获取Windows操作系统设置的屏幕分辨率
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "SettingsBPFunLib")
+	static void GetSystemScreenResolution(int& Length, int& Width);
+	// 获取UE5引擎当前设置的抗锯齿方法
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "SettingsBPFunLib")
+	static void GetAASetttings(FString& AAMethod);
 };
