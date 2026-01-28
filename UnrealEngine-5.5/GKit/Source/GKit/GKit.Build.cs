@@ -40,7 +40,8 @@ public class GKit : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
-			}
+                "RHI"
+            }
 			);
 		
 		

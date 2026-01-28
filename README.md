@@ -1,6 +1,18 @@
 # GKit
 私人代码工具箱
 
+## v0.1.0
+
+新增`GKitSystemFunLib`蓝图函数库，将v0.0.4版本写在GKitStrFunLib下的CPU，GPU硬件信息读取，Windows操作系统设置的分辨率读取，UE5引擎当前设置的抗锯齿方法读取等相关功能函数移动至这个文件中。
+
+在`GKitSystemFunLib`下新增：
+
+- `GetGPUMemoeyInfoByRHI`显卡显存读取
+- `GetAllSupportedResolutions`获取当前设备支持的所有分辨率
+- `GetResolutionSpecified`获取指定比列的分辨率
+- `GetMacAddressString`获取mac地址
+- `GetWorldType`获取引擎当前世界的类型
+
 ## v0.0.4
 
 **5.5版本**
